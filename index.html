@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PlaceHolder – kamerzysta na wesele Nowy Sącz | film, teledysk, dron, FPV</title>
+  <meta name="description" content="Filmy ślubne, teledyski, ujęcia z drona i FPV oraz fotografia ślubna. Nowy Sącz, Limanowa, Gorlice, Grybów, Brzesko i cała Małopolska.">
+  <link rel="canonical" href="https://example.com/">
+  <meta name="theme-color" content="#18211F">
+  <!-- WERSJA TESTOWA: usuń noindex przed publikacją na docelowej domenie -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PlaceHolder – filmy ślubne z ziemi i z powietrza">
+  <meta property="og:description" content="Film ślubny, teledysk, dron, FPV i fotografia. Nowy Sącz i Małopolska.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- LCP: plakat hero ładowany od razu -->
+  <link rel="preload" as="image" href="assets/img/hero/hero-poster-desktop.webp" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="assets/img/hero/hero-poster-mobile.webp" media="(max-width: 767.98px)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PlaceHolder",
+    "description": "Filmy ślubne, teledyski, ujęcia z drona i FPV, fotografia ślubna.",
+    "url": "https://example.com/",
+    "telephone": "+48 000 000 000",
+    "address": { "@type": "PostalAddress", "addressLocality": "Nowy Sącz", "addressRegion": "małopolskie", "addressCountry": "PL" },
+    "areaServed": ["Nowy Sącz", "Limanowa", "Gorlice", "Grybów", "Brzesko", "Krynica-Zdrój", "Stary Sącz", "Małopolska"]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
+<!-- ============ NAWIGACJA ============ -->
+<nav class="site-nav navbar navbar-expand-lg fixed-top" aria-label="Główna nawigacja">
+  <div class="container-xl">
+    <a class="brand" href="#top">PlaceHolder</a>
+    <button class="navbar-toggler site-nav__toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Otwórz menu">
+      <span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav site-nav__links">
+        <li class="nav-item"><a class="nav-link" href="#uslugi">Usługi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fpv">FPV</a></li>
+        <li class="nav-item"><a class="nav-link" href="#realizacje">Realizacje</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pakiety">Pakiety</a></li>
+        <li class="nav-item"><a class="btn btn-heather btn-sm ms-lg-3" href="#kontakt">Sprawdź termin</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end site-offcanvas" tabindex="-1" id="mobileNav" aria-label="Menu">
+  <div class="offcanvas-header">
+    <span class="brand">PlaceHolder</span>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Zamknij menu"></button>
+  </div>
+  <div class="offcanvas-body">
+    <a href="#uslugi" data-bs-dismiss="offcanvas">Usługi</a>
+    <a href="#fpv" data-bs-dismiss="offcanvas">FPV</a>
+    <a href="#realizacje" data-bs-dismiss="offcanvas">Realizacje</a>
+    <a href="#pakiety" data-bs-dismiss="offcanvas">Pakiety</a>
+    <a href="#kontakt" data-bs-dismiss="offcanvas">Kontakt</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO (inspiracja: bright-avenue.jp) ============ -->
+<header class="hero" id="top">
+  <div class="hero__sticky">
+    <div class="hero__media js-hero-clip">
+      <div class="hero__zoom js-hero-zoom">
+        <picture>
+          <source media="(max-width: 767.98px)" srcset="assets/img/hero/hero-poster-mobile.webp">
+          <img class="hero__poster" src="assets/img/hero/hero-poster-desktop.webp" alt="" width="1920" height="1080" fetchpriority="high">
+        </picture>
+        <video class="hero__video js-hero-video" muted loop playsinline preload="none" aria-hidden="true"
+          data-src-desktop="assets/video/hero/hero-desktop.mp4"
+          data-src-mobile="assets/video/hero/hero-mobile.mp4"></video>
+      </div>
+      <div class="hero__shade js-hero-shade"></div>
+    </div>
+
+    <!-- kadry, które przy scrollu zjeżdżają się wokół wideo (desktop) -->
+    <div class="hero__gallery" aria-hidden="true">
+      <img class="hero__gframe" data-slot="-2" src="assets/img/hero/frame-1.webp" alt="" width="600" height="800" loading="lazy">
+      <img class="hero__gframe" data-slot="-1" src="assets/img/hero/frame-2.webp" alt="" width="600" height="800" loading="lazy">
+      <img class="hero__gframe" data-slot="1" src="assets/img/hero/frame-3.webp" alt="" width="600" height="800" loading="lazy">
+      <img class="hero__gframe" data-slot="2" src="assets/img/hero/frame-4.webp" alt="" width="600" height="800" loading="lazy">
+    </div>
+
+    <div class="container-xl hero__content">
+      <h1 class="hero__title js-hero-title">
+        <span class="hero__line"><span>Wasz dzień</span></span>
+        <span class="hero__line"><span>z ziemi</span></span>
+        <span class="hero__line"><span>i&nbsp;z&nbsp;powietrza</span></span>
+      </h1>
+      <div class="js-hero-below">
+        <p class="hero__lead">Filmy ślubne, teledyski, ujęcia z drona i FPV oraz fotografia. Nowy Sącz i cała Małopolska.</p>
+        <div class="hero__actions">
+          <a class="btn btn-heather" href="#kontakt">Sprawdź wolny termin</a>
+          <a class="btn btn-ghost" href="#realizacje">Zobacz filmy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Film ślubny</span><i class="perf"></i><span>Teledysk</span><i class="perf"></i><span>Dron</span><i class="perf"></i><span>FPV</span><i class="perf"></i><span>Fotografia</span><i class="perf"></i>
+        <span>Film ślubny</span><i class="perf"></i><span>Teledysk</span><i class="perf"></i><span>Dron</span><i class="perf"></i><span>FPV</span><i class="perf"></i><span>Fotografia</span><i class="perf"></i>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ USŁUGI (inspiracja: ladolfinajumping.com – wideo na hover) ============ -->
+<section class="section services" id="uslugi">
+  <div class="container-xl">
+    <div class="section-head">
+      <h2>Co nagrywamy</h2>
+      <p>Każda karta ma krótką próbkę filmu. Usługi łączycie w pakiet tak, jak Wam pasuje.</p>
+    </div>
+
+    <div class="services__grid">
+      <article class="service">
+        <figure class="media js-hover-media" tabindex="0">
+          <img src="assets/img/services/dron.webp" alt="Ujęcie z drona nad kościołem" width="800" height="1000" loading="lazy">
+          <video muted loop playsinline preload="none" data-src="assets/video/services/dron.mp4" aria-hidden="true"></video>
+        </figure>
+        <h3>Dron</h3>
+        <p>Szerokie ujęcia kościoła, sali i okolicy. Góry wokół Sącza robią resztę.</p>
+      </article>
+
+      <article class="service service--accent">
+        <figure class="media js-hover-media" tabindex="0">
+          <img src="assets/img/services/fpv.webp" alt="Przelot dronem FPV przez salę weselną" width="800" height="1000" loading="lazy">
+          <video muted loop playsinline preload="none" data-src="assets/video/services/fpv.mp4" aria-hidden="true"></video>
+        </figure>
+        <h3>Dron FPV</h3>
+        <p>Jedno płynne ujęcie przez salę, między gośćmi, prosto na parkiet.</p>
+      </article>
+
+      <article class="service">
+        <figure class="media js-hover-media" tabindex="0">
+          <img src="assets/img/services/teledysk.webp" alt="Kadr z teledysku ślubnego" width="800" height="1000" loading="lazy">
+          <video muted loop playsinline preload="none" data-src="assets/video/services/teledysk.mp4" aria-hidden="true"></video>
+        </figure>
+        <h3>Teledysk</h3>
+        <p>3–5 minut najlepszych chwil zmontowanych pod muzykę, plus rolki do social mediów.</p>
+      </article>
+
+      <article class="service">
+        <figure class="media js-hover-media" tabindex="0">
+          <img src="assets/img/services/zdjecia.webp" alt="Zdjęcie pary młodej w plenerze" width="800" height="1000" loading="lazy">
+          <video muted loop playsinline preload="none" data-src="assets/video/services/zdjecia.mp4" aria-hidden="true"></video>
+        </figure>
+        <h3>Zdjęcia</h3>
+        <p>Reportaż z całego dnia i sesja w plenerze, spójna kolorystycznie z filmem.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FPV – wyróżnik ============ -->
+<section class="fpv" id="fpv">
+  <figure class="fpv__media js-hover-media js-autoplay-in-view">
+    <img src="assets/img/fpv/fpv-poster.webp" alt="" width="1920" height="1080" loading="lazy">
+    <video muted loop playsinline preload="none" data-src="assets/video/fpv/fpv.mp4" aria-hidden="true"></video>
+  </figure>
+  <div class="container-xl fpv__content">
+    <h2>FPV: cała sala w jednym ujęciu</h2>
+    <p>Dron FPV leci tam, gdzie zwykły dron nie wejdzie: przez drzwi kościoła, nad stołami, tuż obok Was podczas pierwszego tańca. Lot planujemy razem z salą, bezpiecznie i bez przeszkadzania gościom.</p>
+    <a class="btn btn-heather" href="#kontakt">Zapytaj o FPV na Waszym weselu</a>
+  </div>
+</section>
+
+<!-- ============ REALIZACJE (inspiracja: waverunmedia.com – stories in motion) ============ -->
+<section class="section stories" id="realizacje">
+  <div class="container-xl">
+    <div class="section-head">
+      <h2>Historie w ruchu</h2>
+      <p>Wybrane wesela z ostatnich sezonów. Kliknijcie, żeby obejrzeć cały teledysk.</p>
+    </div>
+    <div class="stories__list js-stories"></div>
+  </div>
+</section>
+
+<!-- ============ PAKIETY ============ -->
+<section class="section packages" id="pakiety">
+  <div class="container-xl">
+    <div class="section-head">
+      <h2>Pakiety i ceny</h2>
+      <p>Ceny startowe dla sezonu 2027. Dokładną wycenę dostaniecie po krótkiej rozmowie o Waszym dniu.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="package">
+          <h3>Teledysk</h3>
+          <p class="package__price">od 3 500 zł</p>
+          <ul>
+            <li>Teledysk 3–5 min</li>
+            <li>Ujęcia z drona</li>
+            <li>2 rolki pionowe do social mediów</li>
+            <li>Film online i na pendrive</li>
+          </ul>
+          <a class="btn btn-outline-ink" href="#kontakt" data-package="Teledysk">Zapytaj o termin</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="package package--featured">
+          <p class="package__note">Najczęściej wybierany</p>
+          <h3>Film i teledysk</h3>
+          <p class="package__price">od 5 900 zł</p>
+          <ul>
+            <li>Film 30–60 min od przygotowań do oczepin</li>
+            <li>Teledysk 3–5 min</li>
+            <li>Dron i przelot FPV przez salę</li>
+            <li>4 rolki pionowe</li>
+          </ul>
+          <a class="btn btn-heather" href="#kontakt" data-package="Film i teledysk">Zapytaj o termin</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="package">
+          <h3>Film i zdjęcia</h3>
+          <p class="package__price">od 8 900 zł</p>
+          <ul>
+            <li>Wszystko z pakietu „Film i teledysk”</li>
+            <li>Reportaż zdjęciowy z całego dnia</li>
+            <li>Sesja w plenerze</li>
+            <li>Podziękowania dla rodziców</li>
+          </ul>
+          <a class="btn btn-outline-ink" href="#kontakt" data-package="Film i zdjęcia">Zapytaj o termin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIE ============ -->
+<section class="section reviews">
+  <div class="container-xl">
+    <div class="section-head">
+      <h2>Co mówią pary</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><blockquote class="review"><p>Na weselu prawie ich nie widzieliśmy, a w filmie jest wszystko. Przelot FPV nad parkietem goście oglądali pięć razy.</p><footer>Ola i Kuba, Limanowa</footer></blockquote></div>
+      <div class="col-md-4"><blockquote class="review"><p>Teledysk dostaliśmy szybciej, niż się spodziewaliśmy. Rolki poszły na Instagram jeszcze w tygodniu po weselu.</p><footer>Marta i Paweł, Nowy Sącz</footer></blockquote></div>
+      <div class="col-md-4"><blockquote class="review"><p>Ujęcia z drona nad Dunajcem to najpiękniejsza część filmu. Polecamy każdej parze z okolicy.</p><footer>Kasia i Michał, Stary Sącz</footer></blockquote></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBSZAR (SEO lokalne) ============ -->
+<section class="section area">
+  <div class="container-xl">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5"><h2>Gdzie filmujemy</h2></div>
+      <div class="col-lg-7">
+        <p>Mieszkamy w Nowym Sączu i najczęściej pracujemy w Sądecczyźnie: w Starym Sączu, Limanowej, Grybowie, Gorlicach, Krynicy-Zdroju i Brzesku. Dojeżdżamy też do Krakowa, Tarnowa i na Podhale, a na życzenie w całą Polskę.</p>
+        <p class="area__small">Dojazd do 50 km od Nowego Sącza jest w cenie. Loty dronem planujemy zgodnie z przepisami, a o zgody dla konkretnej lokalizacji dbamy sami.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="section contact" id="kontakt">
+  <div class="container-xl">
+    <div class="row g-4 gx-lg-5">
+      <div class="col-lg-5">
+        <h2>Sprawdźmy Wasz termin</h2>
+        <p>Napiszcie datę i miejsce wesela. Odpowiadamy w ciągu 24 godzin.</p>
+        <ul class="contact__list">
+          <li><a href="tel:+48000000000">+48 000 000 000</a></li>
+          <li><a href="mailto:kontakt@example.com">kontakt@example.com</a></li>
+          <li><a href="#" rel="noopener">Instagram</a> / <a href="#" rel="noopener">Facebook</a> / <a href="#" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <form class="contact__form needs-validation" action="#" method="post" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="f-name" class="form-label">Imiona</label>
+              <input type="text" class="form-control" id="f-name" name="imiona" autocomplete="name" required>
+              <div class="invalid-feedback">Wpiszcie swoje imiona.</div>
+            </div>
+            <div class="col-sm-6">
+              <label for="f-email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="f-email" name="email" autocomplete="email" required>
+              <div class="invalid-feedback">Wpiszcie poprawny adres e-mail.</div>
+            </div>
+            <div class="col-sm-6">
+              <label for="f-date" class="form-label">Data wesela</label>
+              <input type="date" class="form-control" id="f-date" name="data" required>
+              <div class="invalid-feedback">Podajcie datę wesela.</div>
+            </div>
+            <div class="col-sm-6">
+              <label for="f-place" class="form-label">Miejsce (kościół, sala)</label>
+              <input type="text" class="form-control" id="f-place" name="miejsce">
+            </div>
+            <div class="col-12">
+              <label for="f-package" class="form-label">Pakiet</label>
+              <select class="form-select" id="f-package" name="pakiet">
+                <option value="">Jeszcze nie wiemy</option>
+                <option>Teledysk</option>
+                <option>Film i teledysk</option>
+                <option>Film i zdjęcia</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="f-msg" class="form-label">Wiadomość</label>
+              <textarea class="form-control" id="f-msg" name="wiadomosc" rows="4"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="f-rodo" required>
+                <label class="form-check-label" for="f-rodo">Zgadzam się na kontakt w sprawie oferty zgodnie z <a href="#">polityką prywatności</a>.</label>
+                <div class="invalid-feedback">Zgoda jest potrzebna, żebyśmy mogli odpisać.</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-heather" type="submit">Wyślij zapytanie</button>
+              <p class="contact__status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container-xl d-flex flex-wrap justify-content-between gap-3">
+    <span class="brand">PlaceHolder</span>
+    <span>Kamerzysta i fotograf na wesele, Nowy Sącz</span>
+    <span>© 2026 PlaceHolder</span>
+  </div>
+</footer>
+
+<!-- Modal z pełnym filmem -->
+<div class="modal fade film-modal" id="filmModal" tabindex="-1" aria-labelledby="filmModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="filmModalTitle">Film</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Zamknij film"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9 js-film-slot"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/portfolio-data.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
